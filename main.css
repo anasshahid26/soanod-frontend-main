@@ -1,0 +1,463 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background: none;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main .section-1 {
+    width: 100%;
+    height: auto;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 2rem 0;
+    margin: 0;
+    flex-shrink: 1 !important;
+}
+
+main .section-1 .card {
+    width: 30%;
+    height: auto;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    background-color: #222531;
+    border-radius: 6px;
+}
+
+main .section-1 .card .card-header {
+    width: 100%;
+    height: auto;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem 1.5rem;
+    margin: 0;
+}
+
+main .section-1 .card .card-header h3 {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    cursor: auto;
+}
+
+main .section-1 .card .card-header a {
+    color: rgb(63, 99, 230);
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+main .section-1 .card .card-header a i {
+    font-size: 10px;
+}
+
+main .section-1 .card .card-body {
+    width: 100%;
+    height: auto;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem 1.5rem;
+    margin: 0;
+}
+
+main .section-1 .card .card-body table {
+    width: 100%;
+    height: auto;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+main .section-1 .card .card-body table tr {
+    width: 100%;
+}
+
+main .section-1 .card .card-body table td {
+    padding: 7px;
+    margin: 0;
+}
+
+main .section-1 .card .card-body table td a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+main .section-1 .card .card-body table td p {
+    color: white;
+    font-size: 13px;
+}
+
+main .section-1 .card .card-body table td small {
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+@media screen and (max-width: 991px) {
+    main .section-1 {
+        width: 100%;
+        height: auto;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    main .section-1 .card {
+        width: 90%;
+        height: auto;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+        background-color: #222531;
+        border-radius: 6px;
+    }
+}
+
+/* Section-1 Ends */
+/* Section-2 Starts */
+
+
+main .section-2 {
+    width: 92%;
+    height: auto;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 2rem 0;
+    margin: 0;
+    flex-shrink: 1 !important;
+}
+
+main .section-2 .configuration-container {
+    width: 100%;
+    height: auto;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.rows-selector {
+    background: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    padding: 8px 12px;
+    margin: 0;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #9aa0b1;
+}
+
+.rows-selector p {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    cursor: text;
+}
+
+.rows-selector select {
+    font-size: 12px;
+    background-color: #222531;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.rows-selector select:hover {
+    font-size: 12px;
+    background-color: #202227;
+}
+
+.rows-selector option {
+    font-size: 11px;
+    background-color: #222531;
+    color: white;
+    padding: 15px 0;
+    text-align: left;
+}
+
+.rows-selector span {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px;
+    margin: 0;
+    cursor: default;
+    border-radius: 50px;
+    box-shadow: 0 2px 12px 0 rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+}
+
+.rows-selector i {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.data-table-searcher {
+    background-color: #222531;
+    color: #9aa0b1;
+    padding: 11px 10px;
+    margin: 0;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    width: 25%;
+}
+
+.data-table-searcher::placeholder {
+    color: #9aa0b1;
+}
+
+main .section-2 .coins-data-table-wrapper {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 0;
+}
+
+main .section-2 .coins-data-table-wrapper table {
+    width: 100%;
+    height: auto;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.sticky-columns th:nth-child(-n+2),
+.sticky-columns td:nth-child(-n+2) {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background-color: #0D1421;
+}
+
+main .section-2 .coins-data-table-wrapper table tbody tr:hover {
+    background-color: #222531; 
+    cursor: pointer; 
+}
+
+main .section-2 .coins-data-table-wrapper table tr {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+main .section-2 .coins-data-table-wrapper table a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit; 
+    text-decoration: inherit;
+}
+
+main .section-2 .coins-data-table-wrapper table tr a:hover {
+    background-color: #222531;
+}
+
+main .section-2 .coins-data-table-wrapper table tr:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+main .section-2 .coins-data-table-wrapper table th {
+    padding: 12px;
+    margin: 0;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+main .section-2 .coins-data-table-wrapper table td {
+    padding: 20px 12px;
+    margin: 0;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+main .section-2 .coins-data-table-wrapper table td .coin-brand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+main .section-2 .coins-data-table-wrapper table td .coin-brand img {
+    width: 25px;
+    height: 25px;
+}
+
+main .section-2 .coins-data-table-wrapper table td .coin-brand p {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+main .section-2 .coins-data-table-wrapper table td .coin-brand span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #9aa0b1;
+    text-transform: uppercase;
+}
+
+main .section-2 .coins-data-table-wrapper table td span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+main .section-2 .coins-data-table-wrapper table td i {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+main .section-2 .coins-data-table-wrapper table td span.danger {
+    color: #ff0000;
+}
+
+main .section-2 .coins-data-table-wrapper table td span.success {
+    color: #16C784;
+}
+
+main .section-2 .coins-data-table-wrapper table td a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+main .section-2 .navigation-container {
+    width: auto;
+    height: auto;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+main .section-2 .navigation-container button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 12px;
+    margin: 0;
+    background-color: transparent;
+}
+
+main .section-2 .navigation-container button:hover {
+    background-color: #222531;
+}
+
+main .section-2 .navigation-container button.active {
+    background-color: #3861fb;
+}
+
+main .section-2 .navigation-container span,
+main .section-2 .navigation-container span:hover {
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+main .section-2 .navigation-container button:disabled,
+main .section-2 .navigation-container button:disabled:hover,
+main .section-2 .navigation-container button:disabled:focus {
+    background-color: transparent;
+    color: #9aa0b1;
+}
+
+@media screen and (max-width: 991px) {
+    .rows-selector {
+        width: 100%;
+        gap: 1px;
+    }
+
+    .data-table-searcher {
+        width: 100%;
+    }
+}

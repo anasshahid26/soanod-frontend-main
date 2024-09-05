@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./hero.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./footer.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Back to top button -->
+    <a id="button">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Header Section -->
+    <header>
+        <div class="scrollable-container">
+            
+            <!-- Section 1 -->
+            <div class="section-1">
+                <div>
+                    <span>Market Cap: </span>
+                    <small>
+                        Value
+                    </small>
+                    <!--
+                        ---- Conditional Rendering ----
+                        <div class="increment"> Show this div (Pointy arrow) on the increment </div>
+                        <i id="increment"> Show the increment value in here </i>
+                                    OR
+                        <div class="decrement"> Show this div (Pointy arrow) on the decrement </div>
+                        <i id="decrement"> Show the decrement value in here </i>
+                    -->
+                </div>
+                <div>
+                    <span>24h Volume: </span>
+                    <small>
+                        Value
+                    </small>
+                </div>
+                <div>
+                    <span>BTC Market Cap: </span>
+                    <small>
+                        Value
+                    </small>
+                </div>
+                <div>
+                    <span>BTC Dominance: </span>
+                    <small>
+                        Value
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section-2">
+            <div>
+                <select name="language" id="language">
+                    <option value="USD" selected>ENG</option>
+                    <option value="USD">FRE</option>
+                    <option value="USD">ARB</option>
+                    <option value="USD">AFR</option>
+                    <option value="USD">SPA</option>
+                </select>
+                <select name="currency" id="currency">
+                    <option value="USD" selected>USD</option>
+                    <option value="USD">USD</option>
+                    <option value="USD">USD</option>
+                    <option value="USD">USD</option>
+                    <option value="USD">USD</option>
+                </select>
+            </div>
+            <div>
+                <button class="logIn-btn">
+                    Log in
+                </button>
+                <button class="signUp-btn">
+                    Sign up
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="section-1">
+            <div>
+                <h1><img alt="Soanod Logo" src="./soanod_black.png"></h1>
+            </div>
+            <menu>
+                <li class="dropdown-container-hero">
+                    <a href="#" class="menu-trigger">Exchanges</a>
+                    <!-- <div class="dropdown-content-hero">
+                        <div><a href="#" class="dropdown-link">Dropdown Item 1</a></div>
+                        <div><a href="#" class="dropdown-link">Dropdown Item 2</a></div>
+                        <div><a href="#" class="dropdown-link">Dropdown Item 3</a></div>
+                    </div> -->
+                </li>
+                <li class="dropdown-container-hero">
+                    <a href="#" class="menu-trigger">Trending</a>
+                    <!-- <div class="dropdown-content-hero">
+                        <div><a href="#" class="dropdown-link">Dropdown Item 1</a></div>
+                        <div><a href="#" class="dropdown-link">Dropdown Item 2</a></div>
+                        <div><a href="#" class="dropdown-link">Dropdown Item 3</a></div>
+                    </div> -->
+                </li>
+                <li class="dropdown-container-hero">
+                    <a href="#" class="menu-trigger">Gainers</a>
+                    <!-- <div class="dropdown-content-hero">
+                        <div><a href="#" class="dropdown-link">Dropdown Item 1</a></div>
+                        <div><a href="#" class="dropdown-link">Dropdown Item 2</a></div>
+                        <div><a href="#" class="dropdown-link">Dropdown Item 3</a></div>
+                    </div> -->
+                </li>
+                <li class="dropdown-container-hero">
+                    <a href="#" class="menu-trigger">Loosers</a>
+                    <!-- <div class="dropdown-content-hero">
+                        <div><a href="#" class="dropdown-link">News</a></div>
+                        <div><a href="#" class="dropdown-link">Academy</a></div>
+                        <div><a href="#" class="dropdown-link">Research</a></div>
+                        <div><a href="#" class="dropdown-link">Videos</a></div>
+                        <div><a href="#" class="dropdown-link">Glossary</a></div>
+                    </div> -->
+                </li>
+            </menu>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section-2">
+
+            <!-- Res Toggler and Menu-->
+            <button id="responsive-toggler" class="responsive-toggler">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div>
+                <button class="common-btn">
+                    <img alt="Coins Pile Image" src="./buy-sell.png"> Buy / Sell
+                </button>
+            </div>
+            <div style="position: relative">
+                <a class="search-container" href="#" onclick="toggleDropdown()">
+                    <i class="fas fa-search"></i>
+                    <p>Search</p>
+                    <span>/</span>
+                </a>
+                <div id="dropdown-container-search" class="dropdown-container-search">
+                    <div class="dropdown-content-search">
+                        <div class="search-bar">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search for a crypto...">
+                            <a href="#" onclick="toggleDropdown()"><i class="fas fa-times"></i></a>
+                        </div>
+                        <p>No Search History</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="responsive-menu" class="responsive-menu">
+        <div class="responsive-menu-content">
+            <a href="#">Exchanges</a>
+            <a href="#">Trending</a>
+            <a href="#">Gainers</a>
+            <a href="#">Loosers</a>
+            <div class="responsive-menu-divider"></div>
+            <button><img alt="Coins Pile Image" src="./buy-sell.png"> Buy / Sell</button>
+        </div>
+    </div>
+
+    <!-- Main Body -->
+    <main>
+
+        <!-- Section 1 Cards -->
+        <div class="section-1">
+            <div class="card">
+                <div class="card-header">
+                    <h3><i class="fas fa-fire"></i> Top Gainers</h3>
+                    <a href="#">More <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="card-body">
+                    <table style="overflow-x: auto;">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#">Grok</a>
+                                </td>
+                                <td>
+                                    <p>+0.000</p>
+                                </td>
+                                <td>
+                                    <small id="increment"> 
+                                        <div class="increment"></div> 
+                                        0.021
+                                    </small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">Toshi</a>
+                                </td>
+                                <td>
+                                    <p>+0.000</p>
+                                </td>
+                                <td>
+                                    <small id="decrement"> 
+                                        <div class="decrement"></div> 
+                                        0.000
+                                    </small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">Core</a>
+                                </td>
+                                <td>
+                                    <p>+0.000</p>
+                                </td>
+                                <td>
+                                    <small id="increment"> 
+                                        <div class="increment"></div> 
+                                        0.021
+                                    </small>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3><i class="fas fa-star"></i>Top Trending</h3>
+                    <a href="#">More <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="card-body">
+                    <table style="overflow-x: auto;">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#">Eth</a>
+                                </td>
+                                <td>
+                                    <p>+0.000</p>
+                                </td>
+                                <td>
+                                    <small id="decrement"> 
+                                        <div class="decrement"></div> 
+                                        0.000
+                                    </small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">Usdc</a>
+                                </td>
+                                <td>
+                                    <p>+0.000</p>
+                                </td>
+                                <td>
+                                    <small id="increment"> 
+                                        <div class="increment"></div> 
+                                        0.021
+                                    </small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">Usdt</a>
+                                </td>
+                                <td>
+                                    <p>+0.000</p>
+                                </td>
+                                <td>
+                                    <small id="decrement"> 
+                                        <div class="decrement"></div> 
+                                        0.000
+                                    </small>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3><i class="fas fa-bolt"></i> Top Losers</h3>
+                    <a href="#">More <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="card-body">
+                    <table style="overflow-x: auto;">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#">Dug</a>
+                                </td>
+                                <td>
+                                    <p>+0.000</p>
+                                </td>
+                                <td>
+                                    <small id="decrement"> 
+                                        <div class="decrement"></div> 
+                                        0.000
+                                    </small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">Dogo</a>
+                                </td>
+                                <td>
+                                    <p>+0.000</p>
+                                </td>
+                                <td>
+                                    <small id="decrement"> 
+                                        <div class="decrement"></div> 
+                                        0.000
+                                    </small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">Fcf</a>
+                                </td>
+                                <td>
+                                    <p>+0.000</p>
+                                </td>
+                                <td>
+                                    <small id="increment"> 
+                                        <div class="increment"></div> 
+                                        0.021
+                                    </small>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2 Table Data -->
+        <div class="section-2">
+            <div class="configuration-container">
+                <a class="rows-selector">
+                    <p>Show rows:</p>
+                    <select>
+                        <option value="10" selected>10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                </a>
+                <input class="data-table-searcher" type="text" placeholder="Search term...">
+            </div>
+
+            <div class="coins-data-table-wrapper">
+                <table id="coins-data-table">
+                    <thead>
+                        <tr>
+                            <th class="text-left">Name</th>
+                            <th class="text-right">Price</th>
+                            <th class="text-right">Market Cap</th>
+                            <th class="text-right">Liquidity</th>
+                            <th class="text-right">Volume (24h)</th>
+                            <th class="text-right">Change (1h)</th>
+                            <th class="text-right">Change (24h)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-left">
+                                <a href="bitcoin.com" target="_blank" class="coin-brand">
+                                   <img alt="Bitcoin Image" src="./bitcoin.png"> Bitcoin <span>BTC</span>
+                                </a>
+                            </td>
+                            <td class="text-right">
+                                <span class="danger"><i class="fas fa-caret-down"></i> $1,000</span>
+                            </td>
+                            <td class="text-right">$1,000</td>
+                            <td class="text-right">$1,000</td>
+                            <td class="text-right">$1,000</td>
+                            <td class="text-right">$1,000</td>
+                            <td class="text-right">$1,000</td>
+                        </tr>
+                        <tr>
+                            <a href="#">
+                                <td class="text-left">
+                                    <a href="eth.com" target="_blank" class="coin-brand">
+                                       <img alt="Ethereum Image" src="./ethereum.png"> Etherium <span>ETH</span>
+                                    </a>
+                                </td>
+                                <td class="text-right">
+                                    <span class="success"><i class="fas fa-caret-up"></i> $1,000</span>
+                                </td>
+                                <td class="text-right">$1,000</td>
+                                <td class="text-right">$1,000</td>
+                                <td class="text-right">$1,000</td>
+                                <td class="text-right">$1,000</td>
+                                <td class="text-right">$1,000</td>
+                            </a>
+                        </tr>
+                        <tr>
+                            <a href="#">
+                                <td class="text-left">
+                                    <a href="bnb.com" target="_blank" class="coin-brand">
+                                       <img alt="BNB Image" src="./bnb.png"> BNB <span>BNB</span>
+                                    </a>
+                                </td>
+                                <td class="text-right">
+                                    <span class="success"><i class="fas fa-caret-up"></i> $1,000</span>
+                                </td>
+                                <td class="text-right">$1,000</td>
+                                <td class="text-right">$1,000</td>
+                                <td class="text-right">$1,000</td>
+                                <td class="text-right">$1,000</td>
+                                <td class="text-right">$1,000</td>
+                            </a>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="navigation-container">
+                <button disabled><i class="fas fa-chevron-left"></i></button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <span>...</span>
+                <button>10</button>
+                <button><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="section-1">
+                <h2>Do you have Cryptocurrency? Buy or Sell instantly at best prices now.</h2>
+                <a href="#">Buy / Sell</a>
+            </div>
+        </div>
+        <div class="section-2">
+            <div class="logo-container">
+                <img src="./soanod_black.png" alt="Soanod Logo">
+            </div>
+            <div class="links-container">
+                <div class="links-content">
+                    <ul>
+                        <h4>Top Coins</h4>
+                        <li><a href="#">Bitcoin</a></li>
+                        <li><a href="#">Ethereum</a></li>
+                        <li><a href="#">Tether</a></li>
+                        <li><a href="#">USD Coin</a></li>
+                        <li><a href="#">XRP</a></li>
+                    </ul>
+                </div>
+                <div class="links-content">
+                    <ul>
+                        <h4>Market Dominance</h4>
+                        <li><a href="#">MNT 0%</a></li>
+                        <li><a href="#">BTC 0%</a></li>
+                        <li><a href="#">ETH 0%</a></li>
+                        <li><a href="#">USDC 0%</a></li>
+                        <li><a href="#">USDT 0%</a></li>
+                    </ul>
+                </div>
+                <div class="links-content">
+                    <ul>
+                        <h4>Socials</h4>
+                        <li><a href="#">(X) Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Telegram</a></li>
+                        <li><a href="#">Reddit</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section-3">
+            <p>&copy; <span id="year"></span> Soanod. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
+
+

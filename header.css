@@ -1,0 +1,262 @@
+header {
+    width: 100%;
+    height: auto;
+    background: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header .scrollable-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 0;
+}
+
+header .scrollable-container .section-1 {
+    width: 50%;
+    height: auto;
+    background: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding: 8px 24px;
+    margin: 0;
+    gap: 15px;
+}
+
+header .scrollable-container .section-1 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    font-size: 11px;
+}
+
+header .scrollable-container .section-1 div span {
+    color: #65738b;
+}
+
+header .scrollable-container .section-1 div small {
+    color: #0073ff;
+    font-size: 11px;
+}
+
+header .scrollable-container .section-1 div i {
+    font-style: normal;
+}
+
+@media screen and (max-width: 991px) {
+    header {
+        width: 100%;
+        height: auto;
+        background: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    header .scrollable-container .section-1 {
+        width: 98%;
+        height: auto;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 15px 15px 15px 200px;
+        margin: 0;
+        gap: 15px;
+        box-sizing: border-box;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+}
+
+header .section-2 {
+    position: relative;
+    width: 50%;
+    height: auto;
+    background: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    padding: 8px 24px;
+    margin: 0;
+    gap: 15px;
+}
+
+header .section-2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    padding: 0 0 0 10px;
+    margin: 0;
+    font-size: 11px;
+}
+
+header .section-2 div:first-child {
+    margin-left: 10px;
+}
+
+header .section-2 div .common-btn {
+    padding: 5px 2px;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+header .section-2 div .common-btn:hover {
+    background: #323546;
+}
+
+header .section-2 div .common-btn i {
+    font-size: 16px;
+}
+
+header .section-2 div select {
+    padding: 5px 2px;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    text-transform: uppercase;
+}
+
+header .section-2 div select:hover {
+    background-color: #323546;
+}
+
+header .section-2 div select option {
+    background-color: #0D1421;
+}
+
+header .section-2 div .dull-btn {
+    color: white;
+    background-color: #323546;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    padding: 8px 12px;
+}
+
+header .section-2 div .dull-btn i {
+    color: #a7a9ac;
+    margin: 1px 0 0 0;
+    font-size: 11px;
+}
+
+header .section-2 div .circle-btn {
+    border-radius: 50%;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    padding: 6px;
+}
+
+header .section-2 div .circle-btn:hover {
+    background-color: #323546;
+}
+
+header .section-2 div .circle-btn img {
+    width: 22px;
+    height: 22px;
+}
+
+header .section-2 div .logIn-btn {
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid rgb(56, 97, 251);
+    outline: none;
+    gap: 5px;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: rgb(56, 97, 251);
+}
+
+header .section-2 div .logIn-btn:hover {
+    background-color: #323546;
+}
+
+header .section-2 div .signUp-btn {
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    gap: 5px;
+    padding: 8px 16px;
+    background-color: rgb(56, 97, 251);
+    border: 1px solid rgb(56, 97, 251);
+    color: white;
+}
+
+header .section-2 div .signUp-btn:hover {
+    background-color: rgb(38, 84, 247);
+}
+
+@media screen and (max-width: 991px) {
+    header .section-2 {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 8px 12px;
+        margin: 0;
+        gap: 8px;
+        box-sizing: border-box;
+    }
+}
